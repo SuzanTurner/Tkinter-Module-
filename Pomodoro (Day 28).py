@@ -82,6 +82,7 @@ def countdown(count):
     elif count == 0:
         if n < 5:
             global check
+            check = tkinter.Label()
             check.config(text = "✅", bg = YELLOW)
             check.grid(column = 2, row = 4+n)
             break_time(300)
